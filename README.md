@@ -110,15 +110,15 @@ Notes
 
 ```mermaid
 flowchart TD
-   A[Open /login] -->|Login as admin@mail.com| B[/products]
-   A -->|Register new user| B
-   B --> C{Search/Paginate}
-   C -->|Click Item| D[/products/:id]
-   D -->|Edit| E[/products/:id/edit]
-   D -->|Delete| B
-   B -->|Add Product| F[/products/create]
-   F --> B
-   E --> D
+  A["Open /login"] -->|Login| B["/products"]
+  A -->|Register new user| B
+  B --> C{Search/Paginate}
+  C -->|Click Item| D["/products/:id"]
+  D -->|Edit| E["/products/:id/edit"]
+  D -->|Delete| B
+  B -->|Add Product| F["/products/create"]
+  F --> B
+  E --> D
 ```
 
 ### Flow explanation
